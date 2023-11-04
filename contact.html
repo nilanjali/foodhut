@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: #1504aa;
+            padding: 12px 20px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: red;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .column,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        
+        form button:hover {
+            background-color: blanchedalmond;
+            border-radius: 20px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div style="text-align:center">
+
+            <h2>Contact Us</h2>
+            <h2>Swing by for a cup of coffee, or leave us a message:</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="map(1).jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <form action=" " method="get">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <label for="lname">Contact Number</label>
+                    <input type="text" id="lname" name="contact" placeholder="contact no." required>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Feedback Us" style="height:170px"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+</body>
+
+</html>

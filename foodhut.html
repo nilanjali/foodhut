@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD HUT</title>
+    <style>
+        body {
+            background-image: url("pexels-chan-walrus-958545.jpg");
+            background-repeat: no-repeat;
+            background-size: 1540px 800px;
+        }
+        
+        .card {
+            background: rgba(202, 192, 192, 0.922);
+            width: 400px;
+            left: 45%;
+            top: 5%;
+            flex: auto;
+            width: 200px;
+            height: 300px;
+            background-color: linear-gradiant(45deg, transparent, transparent 40%, rgb(21, 128, 128)), lenear-gradiant(#262626, #141414);
+        }
+        
+        .collapse {
+            width: 75%;
+            margin: auto;
+            padding: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(234, 234, 217, 0.681);
+        }
+        
+        .collapse ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        
+        .collapse ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 50;
+            font-family: cursive;
+            text-transform: uppercase;
+        }
+        
+        .collapse ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: black;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        
+        .collapse ul li:hover:after {
+            width: 100%;
+        }
+        
+        p {
+            font-family: cursive;
+            font-size: 250%;
+            font-weight: bold;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" id="nav-placeholder">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <p>FOODHUT</p>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5501/home.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5501/menu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5501/payment.html">Payment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5501/contact.html">Contact us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br><br>
+    <div class="card" style="width: 18rem;">
+
+        <div align="center" class="card-body">
+            <form action=" " method="get">
+
+
+                <center><b><u>LOGIN</u></b><br><br>
+                    <label>Username:</label> <input type="text" name="username" value="" id="x1" required><br><br>
+
+                    <label>Password:</label><input required type="Password" name="password" value="" id="x1" required> <br><br>
+                    <div class="checkbox">
+                        <label for="usercheck">
+                    <input type="checkbox" name="usercheck" value="">keep me logged in</label>
+                        <center>
+                            <br>
+                            <button type="login">Login</center>
+
+                </center>
+            </form>
+        </div>
+    </div>
+    <div>
+
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #h {
+            font-family: cursive;
+            font-size: 200%;
+            font-weight: bold;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(78, 75, 75);
+        }
+        
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+        
+        .row {
+            margin: 0 -5px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            margin: 16px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        
+        .but {
+            width: 150px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 10px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #120101;
+            background: rgba(161, 47, 47, 0.645);
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .but:hover {
+            background-color: rgb(151, 18, 18);
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="row">
+        <div class="column">
+            <div class="card"><img src="on pza.jpg" width="100%" height="220px"><b>Pizza<br>299/-only</b> <button class="but">ADD TO CART</button> </div>
+
+        </div>
+        <div class="column">
+            <div class="card"><img src="idli.jpg" width="100%" height="220px"><b>Idli<br>99/-only </b><button class="but">ADD TO CART</button></div>
+
+        </div>
+        <div class="column">
+            <div class="card"><img src="pexels-engin-akyurt-1438672.jpg" width="100%" height="220px"><b>Pasta<br>199/-only</b> <button class="but">ADD TO CART</button></div>
+
+        </div>
+        <div class="column">
+            <div class="card"><img src="burger.jpg.jpg" width="100%" height="220px"><b>Burger<br>249/-only</b> <button class="but">ADD TO CART</button></div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card"><img src="pexels-bishop-tamrakar-3926123.jpg" width="100%" height="220px"><b>Momos<br>79/-only</b> <button class="but">ADD TO CART</button></div>
+
+        </div>
+        <div class="column">
+            <div class="card"><img src="ds.jpg" width="100%" height="220px"><b>Paneer(full)<br>199/-only</b> <button class="but">ADD TO CART</button></div>
+
+        </div>
+        <div class="column">
+            <div class="card"><img src="rice.jpg" width="100%" height="220px"><b>Rice(full)<br>99/-only</b> <button class="but">ADD TO CART</button></div>
+
+        </div>
+        <div class="column">
+            <div class="card"><img src="messy.jpg" width="100%" height="220px"><b>Roti<br>10/-only</b> <button class="but">ADD TO CART</button></div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card"><img src="pav.jpg" width="100%" height="220px"><b>Pav Bhaji<br>79/-only</b> <button class="but">ADD TO CART</button></div>
+
+        </div>
+        <div class="column">
+            <div class="card"><img src="dos1a.jpg" width="100%" height="220px"><b>Dosa<br>149/-only</b> <button class="but">ADD TO CART</button></div>
+
+        </div>
+        <div class="column">
+            <div class="card"><img src="icee.jpg" width="100%" height="220px"><b>Ice Cream(Butter Scotch)<br>89/-only</b> <button class="but">ADD TO CART</button></div>
+
+        </div>
+        <div class="column">
+            <div class="card"><img src="ck.jpg" width="100%" height="220px"><b>Cake<br>799/kg-only</b> <button class="but"> ADD TO CART</button></div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
